@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-gap: 1em;
+    background-color: beige;
+}
+
+.pool{
+    width:"fit-content";
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(pool.jpg);
+    padding: 10px 8%;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+}
+
+.chess{
+    width:"fit-content";
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(chess.jpg);
+    padding: 10px 8%;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+}
+
+.fifa{
+    width:"fit-content";
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(fifa.jpg);
+    padding: 10px 8%;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+}
+.tablesoccer{
+    width:"fit-content";
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(table\ soccer.jpg);
+    padding: 10px 8%;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+}
+.tabletennis{
+    width:"fit-content";
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(table\ tennis.jpg);
+    padding: 10px 8%;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+}
+
+.darts{
+    width:"fit-content";
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(darts.jpg);
+    padding: 10px 8%;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        grid-template-rows: repeat(12, 1fr); /* Adjust the number of rows for smaller screens */
+    }
+    section {
+        padding: 5px;
+    }
+}
+
+/* Media query for iPads */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust grid-template-columns and other styles as needed */
+    body {
+        grid-template-columns: repeat(2, 1fr); /* For iPads, display sections in 2 columns */
+        grid-template-rows: repeat(3, 1fr); /* Adjust the number of rows if needed */
+    }
+    section {
+        padding: 10px 5%; /* Adjust padding */
+    }
+}
+
+/* Media query for all iOS devices */
+@media screen and (max-device-width: 1024px) {
+    /* Adjust grid-template-columns and other styles as needed */
+    body {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column layout */
+        grid-template-rows: auto; /* Reset the number of rows */
+    }
+    section {
+        padding: 10px 5%; /* Adjust padding */
+    }
+}
